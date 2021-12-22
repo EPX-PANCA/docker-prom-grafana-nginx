@@ -4,7 +4,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 
 chmod +x /usr/local/bin/docker-compose
 
-cp ./stub.conf /etc/nginx/conf.d
+cp ./nginx/stub.conf /etc/nginx/conf.d
 
 systemctl restart nginx
 
