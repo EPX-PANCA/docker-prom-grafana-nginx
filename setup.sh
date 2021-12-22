@@ -8,4 +8,4 @@ cp ./stub.conf /etc/nginx/conf.d
 
 systemctl restart nginx
 
-docker compose up -d
+docker-compose up -d

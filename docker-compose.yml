@@ -32,9 +32,9 @@ services:
     container_name: nginx-exporter
     restart: always
     command:
-      - '-nginx.scrape-uri=http://0.0.0.0:8080/stub_status'
+      - '-nginx.scrape-uri=http://172.17.0.1:8080/stub_status'
     expose:
-      - 9113:9113
+      - 9113
     networks:
       - monitoring
 
@@ -61,6 +61,8 @@ services:
 
   grafana:
     image: grafana/grafana-oss:latest
+    ports:
+      - "9191:3000"
     container_name: grafana
     restart: always
     volumes:

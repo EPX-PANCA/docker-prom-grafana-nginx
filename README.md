@@ -2,6 +2,7 @@
 
 ```sh
 Prerequisite :
+- Nginx
 - Docker
 
 Tested On : 
